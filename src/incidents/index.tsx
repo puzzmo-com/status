@@ -1,7 +1,7 @@
 import useIncidents from "./hooks/useIncidents";
 import type { NextPage } from "next";
-import Incidents from "./types/Incident";
-import MonthlyIncident from "./types/MonthlyIncident";
+import {Incident} from "./types/Incident";
+import {MonthlyIncident} from "./types/MonthlyIncident";
 
 const IncidentsSection: NextPage = () => {
 	const [monthlyIncidents, isIncidentsLoading] = useIncidents();
@@ -26,7 +26,7 @@ const IncidentsSection: NextPage = () => {
 							<p className="mr-5 text-2xl font-semibold leading-6 text-gray-900">{incidents.month}</p>
 							<div className="mt-2 flex-1 h-px  bg-gray-300" />
 							<div className="ml-6 border-l-4">
-								{(incidents.incidents as Incidents[]).map((incident) => (
+								{(incidents.incidents as Incident[]).map((incident) => (
 									<div className="flex" key={incident.id}>
 										<div className="-ml-4 mt-6 flex rounded-full w-7 h-7 bg-gray-300">
 											<svg
