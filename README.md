@@ -1,3 +1,11 @@
+Status Page
+
+We want a way to have a status page which does not live on our infrastructure. We want to be able to host it on GitHub Pages, and have it be powered by GitHub Actions and Issues. 
+
+This is so that if we are having issues with _our_ infra, then we can still communicate what is going on.
+
+
+----
 
 # Fettle 💟 
 

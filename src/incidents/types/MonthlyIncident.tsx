@@ -1,8 +1,6 @@
-import Incident from "./Incident";
+import {Incident} from "./Incident";
 
-interface MonthlyIncident {
+export interface MonthlyIncident {
     month: string;
     incidents?: Incident[];
 }
-
-export default MonthlyIncident;

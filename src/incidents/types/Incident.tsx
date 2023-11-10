@@ -1,4 +1,4 @@
-interface Incident {
+export interface Incident {
     id: number;
     title: string;
     desciption: string;
@@ -7,5 +7,3 @@ interface Incident {
     closed_at: string;
     labels: string[];
 }
-
-export default Incident;
