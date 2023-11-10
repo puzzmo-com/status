@@ -15,7 +15,7 @@ function useIncidents() {
                 const monthlyIncident = divideMonthly(issues.map((issue: any) => ({
                     id: issue.id,
                     title: issue.title,
-                    desciption: issue.body,
+                    description: issue.body,
                     status: issue.state,
                     created_at: issue.created_at,
                     closed_at: issue.closed_at,
