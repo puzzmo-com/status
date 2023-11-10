@@ -6,7 +6,7 @@ const nextConfig = {
   assetPrefix: production ? '/' : '',
   reactStrictMode: true,
   swcMinify: true,
-  basePath: "status"
+  basePath: "/status"
 }
 
 module.exports = nextConfig
